@@ -9,11 +9,6 @@
         <link rel="manifest" href="manifest.json">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#000000">
-        <script>
-            if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('sw.js');
-            }
-        </script>
         <script defer src="/js/activePage.js"></script>
         <script defer src="/js/dropdown.js"></script>
     </head>
@@ -130,5 +125,10 @@
                 </div>
             </div>
         </div>
+        <script>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('sw.js');
+            }
+        </script>
     </body>
 </html>
